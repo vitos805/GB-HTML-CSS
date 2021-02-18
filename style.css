@@ -191,6 +191,15 @@ h3 {
 .reviews_content_bg {
     background: #EBEBEB;
     border-radius: 5px;
+    position: relative;
+}
+.reviews_content_bg::before {
+    position: absolute;
+    content: '';
+    top: 38px;
+    right: 100%;
+    border: 10px solid transparent;
+    border-right: 20px solid #EBEBEB;
 }
 .reviews_text {
     font-family: Roboto;
