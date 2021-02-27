@@ -75,20 +75,24 @@ h3 {
     width: 430px;
     height: 245px;
 }
+.dignity {
+    background: #F5F5F5;
+}
 .dignity_wrapper {
     padding-top: 25px;
     padding-bottom: 48px;
-    background: #F5F5F5;
 }
 .dignity_title {
     margin-bottom: 29px;
 }
 .dignity_text_wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 .dignity_text {
     display: flex;
     margin-bottom: 33px;
+    width: 50%;
 }
 .dignity_img {
     display: block;
@@ -146,10 +150,12 @@ h3 {
     background: #445161;
     margin-right: 14px;
 }
+.reviews {
+    background: #F5F5F5;
+}
 .reviews_wrapper {
     padding-top: 25px;
     padding-bottom: 42px;
-    background: #F5F5F5;
 }
 .reviews_title {
     margin-bottom: 29px;
@@ -189,6 +195,15 @@ h3 {
 .reviews_content_bg {
     background: #EBEBEB;
     border-radius: 5px;
+    position: relative;
+}
+.reviews_content_bg::before {
+    position: absolute;
+    content: '';
+    top: 38px;
+    right: 100%;
+    border: 10px solid transparent;
+    border-right: 20px solid #EBEBEB;
 }
 .reviews_text {
     font-family: Roboto;
